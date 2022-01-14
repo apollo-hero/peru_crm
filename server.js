@@ -8,7 +8,7 @@ var port = process.env.PORT || '3000';
 process.env.DEBUG = '*';
 // process.env.DEBUG = '*,-express*,-engine*,-send,-*parser';
 
-server.listen(port);
+server.listen(port, () => console.log('Server up and running on port'+port+'!'));
 
 io.on('connection', function (socket) {
 
@@ -20,7 +20,7 @@ io.on('connection', function (socket) {
     socket.emit('connected', 'Connection to server established!');
 
     if(route.length) {
-        soocket.emit('location update', route[route.length]);
+        socket.emit('location update', route[route.length]);
     }
 
     socket.on('update sender', function(data) {

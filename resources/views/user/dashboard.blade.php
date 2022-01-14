@@ -80,11 +80,11 @@
 </script>
 
 <script type="text/javascript">
-      $(".drp1").hide();
+    $(".drp1").hide();
     $("#drplocat").click(function(){
-  $(".drplocat").hide();
-  $(".drp1").show()
-});
+      $(".drplocat").hide();
+      $(".drp1").show()
+    });
 
 
     if( navigator.geolocation ) {
