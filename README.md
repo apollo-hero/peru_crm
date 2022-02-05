@@ -1,3 +1,4 @@
+This is Stephane Ardisson.
 # Tranxit Request Features
 
 * checking the staging environment
